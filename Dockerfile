@@ -10,7 +10,7 @@ RUN apk --update add --no-cache --virtual .build-deps \
     {\n \
     "authToken": \"$BOT_TOKEN\",\n \
     "owner": $BOT_USERID\n \
-    }
+    } \
     " >> config.json; \
     git clone https://github.com/botgram/botgram.git; \
     cd botgram; \
