@@ -14,12 +14,12 @@ RUN apk --update add --no-cache --virtual .build-deps \
     cd modules; \
     git clone https://github.com/botgram/shell-bot.git; \
     cd shell-bot; \
-    npm install;
+    npm install; \
     echo -e " \
     {\n \
     "authToken": \"$BOT_TOKEN\",\n \
     "owner": $BOT_USERID\n \
     } \
-    " >> config.json; \
+    " >> config.json;
 WORKDIR /botgram/modules/shell-bot/
 CMD npm start
