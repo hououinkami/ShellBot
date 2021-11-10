@@ -17,8 +17,8 @@ RUN apk --update add --no-cache --virtual .build-deps \
     npm install; \
     echo -e " \
     {\n \
-    "authToken": \"$BOT_TOKEN\",\n \
-    "owner": $BOT_USERID\n \
+    "authToken": \"\$BOT_TOKEN\",\n \
+    "owner": \$BOT_USERID\n \
     } \
     " >> config.json;
 WORKDIR /botgram/modules/shell-bot/
