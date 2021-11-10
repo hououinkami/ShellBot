@@ -21,5 +21,8 @@ RUN apk --update add --no-cache --virtual .build-deps \
     git clone https://github.com/botgram/shell-bot.git; \
     cd shell-bot; \
     npm install; \
+    cd ..; \
+    cd ..; \
+    cd ..; \
 WORKDIR /botgram/modules/shell-bot/
 CMD npm start
