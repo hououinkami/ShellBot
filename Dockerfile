@@ -4,8 +4,8 @@ ENV BOT_TOKEN ""
 ENV BOT_USERID ""
 
 RUN apk --update add --no-cache --virtual .build-deps \
-        python gcc musl-dev git make g++ nodejs \
-        world build-essential openssh; \
+        python3 gcc musl-dev git make g++ nodejs \
+        openssh; \
     echo -e " \
     {\n \
     "authToken": \"$BOT_TOKEN\",\n \
